@@ -1,8 +1,6 @@
 package br.com;
 
 import br.com.model.Funcionario;
-import br.com.model.Pessoa;
-import br.com.service.Metodos;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -105,7 +103,7 @@ public class Principal {
 
 
 //      AGRUPAR OS FUNCIONÁRIOS POR FUNÇÃO
-        
+
         Map<String, List<Funcionario>> funcionariosPorFuncao = listaDeFuncionarios.stream().collect(Collectors.groupingBy(Funcionario::getFuncao));
 
         System.out.println("""
